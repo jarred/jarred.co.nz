@@ -13,22 +13,34 @@
     </head>
     <body>
         <div id="intro">
-            <h1>Good Evening</h1>
-            <p>I am a <span class="what">designer</span> from New Zealand.</p>
+            <h1 class="js-greeting">&nbsp;</h1>
+            <p>I have been designing and building websites for over 7 years. Currently I am Design Director at <a href="http://www.bitbybit.io" target="_blank">bit by bit</a> in Wellington, New Zealand</p>
+            <p>I am an excellent (S)CSS and Javacript developer (if I may say so) and also interested in Branding and Iconography.</p>
+            <p class="links"><a href="http://amongotherthings.co">Portfolio</a>, <a href="mailto:jarredbishop@gmail.com">Email</a></p>
         </div>
         <div id="locations">
-            <p>I exist digitally in these locations:</p>
-            <ul>
-                <li><a href="http://amongotherthings.co">amongotherthings.co</a><span class="hint">(Portfolio)</span></li>
-                <li><a href="http://bitbybit.io">bitbybit.io</a><span class="hint">(Day Job)</span></li>
-                <li><a href="http://twitter.com/jarred">twitter.com/jarred</a></li>
-                <li><a href="http://github.com/jarred">github.com/jarred</a></li>
-                <li><a href="http://dribbble.com/jarred">dribbble.com/jarred</a></li>
-                <li><a href="http://rdio.com/people/jarredbishop">rdio.com/people/jarredbishop</a></li>
-                <li><a href="http://instagram.com/jarredbishop">instagram.com/jarredbishop</a></li>
-                <li><a href="http://flickr.com/photos/jarredbishop">flickr.com/photos/jarredbishop</a></li>
-            </ul>
+          <p>
+            <a href="http://twitter.com/jarred" target="_blank" class="twitter" data-type="social"><span class="key"></span>Twitter</a>
+            <span class="separator"></span>
+            <a href="http://github.com/jarred" target="_blank" class="github" data-type="development"><span class="key"></span>Github</a>
+            <span class="separator"></span>
+            <a href="http://dribbble.com/jarred" target="_blank" class="dribbble" data-type="design"><span class="key"></span>Dribbble</a>
+            <span class="separator"></span>
+            <a href="http://instagram.com/jarredbishop" target="_blank" class="instagram" data-type="photography"><span class="key"></span>Instagram</a>
+            <span class="separator"></span>
+            <a href="http://flickr.com/photos/jarredbishop" target="_blank" class="flickr" data-type="photography"><span class="key"></span>Flickr</a>
+            <span class="separator"></span>
+            <a href="http://rdio.com/people/jarredbishop" target="_blank" class="rdio" data-type="music"><span class="key"></span>Rdio</a>
+            <span class="separator"></span>
+            <a href="http://soundcloud.com/jarred" target="_blank" class="soundcloud" data-type="music"><span class="key"></span>Soundcloud</a>
+            <span class="separator"></span>
+          </p>
         </div>
         <script type="text/javascript" src="/assets/js/libs.js"></script>
+        <script type="text/javascript" src="/assets/js/app.js"></script>
+        <script type="text/javascript">
+        window.JarredCoNz.Main.init();
+        </script>
+
     </body>
 </html>

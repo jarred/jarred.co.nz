@@ -1,5 +1,5 @@
 @import "reset/cssreset";
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+// @import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
 
 $sans: "Helvetica Neue", Sans-Serif;
 $mono: "Droid Sans Mono", "Monaco", monospace;
@@ -8,7 +8,6 @@ $black: #222;
 
 html{
 	font: 400 14px/20px $sans;
-	border: 10px solid $black;
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -17,39 +16,61 @@ html{
 }
 
 #intro{
-	margin: $margin;
-	font: 400 60px/60px $sans;
-	letter-spacing: -1px;
-	h1{
-		font-weight: 600;
+	margin: 20px;
+	width: 300px;
+	p{
+		margin-top: 20px;
 	}
-	.small{
-		font: 400 14px/20px $sans;
+	a{
+		color: $black;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+		&:active{
+			color: #FFF;
+		}
 	}
 }
 
 #locations{
-	margin: $margin;
-	font: 400 12px/20px $mono;
-	p{
-		margin-bottom: 10px;
-	}
-	li{
-		.hint{
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	.separator{
+		color: #CCC;
+		margin: auto 3px;
+		&:after{
+			content: "/";
+		}
+		&:last-child{
 			display: none;
-			color: #CCC;
+		}
+	}
+	a{
+		color: $black;
+		text-decoration: none;
+		display: inline-block;
+		.key{
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			border-radius: 50%;
+			background-color: #FF3300;
+			position: relative;
+			top: 2px;
+			margin-right: 5px;
+		}
+		&.twitter .key{
+			background-color: blue;
 		}
 		&:hover{
-			.hint{
-				display: inline;
-				margin-left: 8px;
-			}
+			text-decoration: underline;
 		}
-		a{
-			text-decoration: none;
-			color: #0000FF;
-			&:visited{
-				color: #BBB;
+		&:active{
+			color: #FFF;
+			.key{
+				background-color: #FFF;
 			}
 		}
 	}
