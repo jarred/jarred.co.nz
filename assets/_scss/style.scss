@@ -60,9 +60,40 @@ html{
 			position: relative;
 			top: 2px;
 			margin-right: 5px;
+			overflow: hidden;
+			.half{
+				display: block;
+				left: 0px;
+				width: 50%;
+				top: 0px;
+				bottom: 0px;
+				position: absolute;
+				background-color: #000;
+			}
 		}
 		&.twitter .key{
-			background-color: blue;
+			background-color: #0084b4;
+		}
+		&.github .key{
+			background-color: #000;
+		}
+		&.dribbble .key{
+			background-color: #ea4c89;
+		}
+		&.instagram .key{
+			background-color: #3f729b;
+		}
+		&.soundcloud .key{
+			background-color: #FF6000;
+		}
+		&.rdio .key{
+			background-color: #008fd5;
+		}
+		&.flickr .key{
+			background-color: #FF0079;
+			.half{
+				background-color: #0b5de0;
+			}
 		}
 		&:hover{
 			text-decoration: underline;
