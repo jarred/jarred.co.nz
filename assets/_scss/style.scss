@@ -120,3 +120,21 @@ html{
 		}
 	}
 }	
+
+.column{
+	float: left;
+	width: 200px;
+	margin-left: 20px;
+	color: #CCC;
+	margin-top: 20px;
+	h2{
+		color: #DDD;
+	}
+	a{
+		text-decoration: none;
+		color: #BBB;
+	}
+	@media only screen and (max-width: 600px) {
+		float: none;
+	}
+}
